@@ -1,0 +1,18 @@
+.carousel {
+    height: 200px;
+
+    &__item {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__img {
+        width: 164px;
+        height: 149px;
+        box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15);
+        margin-right: 12px;
+        border: none;
+        border-radius: 10px;
+    } 
+}
