@@ -12,7 +12,10 @@ export const Direction = () => {
                     exact path="/" 
                     render={currentPath}
                 />
-                <Route exact path="/authorization" component={Authorization}/>
+                <Route 
+                    path="/authorization" 
+                    component={Authorization} 
+                />
                 <Route 
                     path="/search" 
                     render={currentPath}
