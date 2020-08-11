@@ -1,0 +1,98 @@
+.authorization {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../../assets/images/Authorization/Train.jpg) fixed 50% 26% no-repeat;
+    background-size: cover;
+}
+
+.form {
+    width: 410px;
+    height: 350px;
+    margin: 0 20px;
+    padding: 50px 32px 37px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+
+    &-group {
+        position: relative;
+        margin-bottom: 28px;
+    }
+
+    &__error {
+        line-height: 1.5;
+        font-size: 12px;
+        color: #EB1717;
+
+        &.absolute {
+            position: absolute;
+            left: 0;
+            top: 68px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    &__label {
+        font-size: 16px;
+        font-weight: 350;
+        line-height: 1.5;
+    }
+
+    &__control {
+        width: 100%;
+        height: 34px;
+        padding: 0.375rem 0.75rem;
+        color: #495057;
+        border: 1px solid #ced4da;
+        border-radius: 0.25rem;
+        transition: all 0.15s ease-in-out;
+
+        &:focus {
+            outline: 0;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+    }
+
+    &__invalid {
+        border: 1px solid #EB1717;
+        box-shadow: 0px 0px 4px rgba(235, 23, 23, 0.2);
+
+        &:focus {
+            box-shadow: 0 0 0 0.2rem #eb17179a;
+        }
+    }
+
+    &__button {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        & button {
+            width: 116px;
+            height: 34px;
+            border-radius: 4px;
+            border-color: transparent !important;
+            background: linear-gradient(to right, #5a3f37, #2c7744);
+            box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+
+            &:hover {
+                box-shadow: 0px 0px 4px #2c7744;
+            }
+
+            &:active {
+                background-color: transparent;
+                border-color: transparent !important;
+                background: linear-gradient(131.1deg, #5a3f37 -15.34%, #2c7744 145.95%);
+                border: 1.5px solid #5a3f37;
+                box-shadow: none;
+            }
+        }
+    }
+} // .form
