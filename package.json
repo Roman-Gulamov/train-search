@@ -6,6 +6,7 @@
         "type": "git",
         "url": "git+//https://github.com/Roman-Gulamov/Train-search"
     },
+    "homepage": "https://roman-gulamov.github.io/train-search",
     "private": true,
     "dependencies": {
         "bootstrap": "^4.5.0",
@@ -41,6 +42,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "homepage": "https://roman-gulamov.github.io/train-search"
+    }
 }
