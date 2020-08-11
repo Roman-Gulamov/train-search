@@ -10,7 +10,7 @@ export const DirectTrains = () => {
 
     const onFavoriteHandler = (event) => {
         const heart = event.target;
-        const heartId = event.target.getAttribute("data-heartid");
+        const heartId = heart.getAttribute("data-heartid");
 
         if (heart.classList.contains('fill')) {
             setIsFavorite(isFavorite - 1);
