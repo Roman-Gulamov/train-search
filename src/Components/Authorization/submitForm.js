@@ -1,12 +1,11 @@
 import { createBrowserHistory } from "history";
 
 export const submitForm = (values) => {
-    let date = new Date(Date.now() + 86400e3);
+    const history = createBrowserHistory();
+    const date = new Date(Date.now() + 86400e3);
     document.cookie = `login = ${values.login}; expires= ${date}`; 
     document.cookie = `password = ${values.password}; expires= ${date}`;
-    setTimeout(() => {
-        const history = createBrowserHistory();
-        history.push('/train-search/#/search');
-        history.go(0);
-    }, 500);
+    
+    history.push('/train-search/#/search');
+    history.go(0);
 }
