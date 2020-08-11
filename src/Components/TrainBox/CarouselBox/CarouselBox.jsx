@@ -2,9 +2,10 @@ import React from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { slickSettings } from './slickSettings';
 import CAROUSEL_DATA from './Data/CarouselData';
 import './carouselBox.scss';
-import { slickSettings } from './slickSettings';
+
 
 export const CarouselBox = () => {
     return (
