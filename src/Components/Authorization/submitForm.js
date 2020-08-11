@@ -8,4 +8,5 @@ export const submitForm = (values) => {
     
     history.push('/train-search/#/search');
     history.go(0);
+    window.location.reload(); // for mobile phone
 }
