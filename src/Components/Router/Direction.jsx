@@ -9,12 +9,12 @@ export const Direction = () => {
         <Router>
             <Switch>
                 <Route 
-                    exact path="/" 
+                    exact path="train-search/" 
                     render={currentPath}
                 />
-                <Route exact path="/authorization" component={Authorization}/>
+                <Route exact path="train-search/authorization" component={Authorization}/>
                 <Route 
-                    path="/search" 
+                    path="train-search/search" 
                     render={currentPath}
                 />
                 <Route component={Error} />
