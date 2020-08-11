@@ -11,7 +11,7 @@ export const TrainBox = () => {
     return (
         <div className='trainBox'>
             <div className='login'>
-                <a href='/authorization' onClick={exitClick}>
+                <a href='/train-search/#/authorization' onClick={exitClick}>
                     <span>Выйти</span>
                     <ExitSvg />
                 </a>
