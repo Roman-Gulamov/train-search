@@ -1,6 +1,8 @@
 import { createBrowserHistory } from "history";
 
-export const exitClick = () => {
+export const exitClick = (event) => {
+    event.preventDefault();
+    
     const oldDate = 'Thu, 01 Jan 1970 00:00:00 GMT';
     const history = createBrowserHistory();
 
