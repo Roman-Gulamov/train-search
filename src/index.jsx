@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "./assets/fonts/SF-Pro-Text/stylesheet.css";
+import "./assets/fonts/Roboto/stylesheet.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.scss';
-import { App } from './Components/App'
+import { Direction } from './Components/Router/Direction';
 
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render(<Direction />,document.getElementById('root'));
