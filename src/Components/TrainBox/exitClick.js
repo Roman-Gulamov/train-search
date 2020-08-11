@@ -8,6 +8,6 @@ export const exitClick = () => {
     document.cookie = `password = ; path=/; expires= ${oldDate}`;
     localStorage.clear();
     
-    history.push('/authorization');
+    history.push('/train-search/#/authorization');
     history.go(0);
 }

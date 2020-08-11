@@ -6,7 +6,7 @@ export const submitForm = (values) => {
     document.cookie = `password = ${values.password}; expires= ${date}`;
     setTimeout(() => {
         const history = createBrowserHistory();
-        history.push('/search');
+        history.push('/train-search/#/search');
         history.go(0);
     }, 500);
 }
