@@ -27,7 +27,7 @@ export const Authorization = () => {
                             </label>
                             <Field
                                 name='login'
-                                type='email'
+                                type='text'
                                 className= {`form__control ${touched.login && errors.login ? "form__invalid" : ""}`}
                                 autoFocus={true}
                                 autoComplete="true"
