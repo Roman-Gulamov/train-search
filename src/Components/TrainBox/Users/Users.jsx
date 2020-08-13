@@ -3,7 +3,7 @@ import Axios from "axios";
 import { Form, Accordion, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { sortUp, sortBottom } from './Sort/sortID';
 import { sortName } from './Sort/sortName';
-import { accordionRef } from './Sort/refs';
+import { sortRef } from './Sort/ref';
 import { ParseMap } from './ParseMap/ParseMap';
 import { LogOut } from './LogOut/LogOut';
 import './users.scss';
@@ -67,7 +67,7 @@ export const Users = () => {
                             value="Сортировать по убыванию"
                             className="users__button"
                         />
-                        <Accordion defaultActiveKey="0" ref={accordionRef}>
+                        <Accordion defaultActiveKey="0" ref={sortRef}>
                             <ParseMap 
                                 parseFile={parseFile}
                                 checkOnline={checkOnline}
