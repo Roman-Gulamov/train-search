@@ -5,8 +5,9 @@ import { DirectMap } from './DirectMap';
 
 
 export const DirectTrains = () => {
-    const initialState = () => Number(localStorage.getItem("isFavorite") || null);
-    const [isFavorite, setIsFavorite] = useState(initialState);
+    const initialFavorite = () => Number(localStorage.getItem("isFavorite") || null);
+    const [isFavorite, setIsFavorite] = useState(initialFavorite);
+
 
     const onFavoriteHandler = (event) => {
         const heart = event.target;
@@ -25,7 +26,7 @@ export const DirectTrains = () => {
 
     return (
         <Context.Provider value={(event) => onFavoriteHandler(event)}>
-            <>
+            <>  
                 <div className='countFavor'>
                     <span>Добавлено в Избранное: <span className='text-primary'>{isFavorite}</span> рейсов</span>
                 </div>
