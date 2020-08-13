@@ -16,4 +16,5 @@
 4. `React Slick`
 5. `React Bootstrap`
 6. `SCSS`
+7. `Axios`
 
