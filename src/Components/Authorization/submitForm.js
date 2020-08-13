@@ -3,7 +3,7 @@ import Axios from "axios";
 
 export const submitForm = (values) => {
     const axios = Axios.create();
-    axios.post("http://emphasoft-test-assignment.herokuapp.com/api-token-auth/", {...values}, {
+    axios.post("https://emphasoft-test-assignment.herokuapp.com/api-token-auth/", {...values}, {
         header: {
             "Access-Control-Allow-Origin": "*"
         }

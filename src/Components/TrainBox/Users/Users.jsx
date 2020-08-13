@@ -16,7 +16,7 @@ export const Users = () => {
     const token = initialToken();
 
     useEffect(() => {
-        axios.get("http://emphasoft-test-assignment.herokuapp.com/api/v1/users/", {
+        axios.get("https://emphasoft-test-assignment.herokuapp.com/api/v1/users/", {
             'headers': {
                 "Authorization": `Token ${token}`
             }
