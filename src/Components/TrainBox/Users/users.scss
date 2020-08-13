@@ -1,0 +1,94 @@
+.users {
+    &__header {
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+    }
+
+    &__button {
+        color: black;
+        border-radius: 4px;
+        border-color: transparent !important;
+        background: rgba(0, 123, 255, 0.25);
+
+        &:active, &:focus {
+            color: white;
+            background: rgba(0, 123, 255, 0.705);
+            box-shadow: none;
+        }
+    }
+
+    &__logOut {
+        & a {
+            color: black;
+            stroke: black;
+            transition: all 0.5s ease;
+    
+            &:hover {
+                color: #000000c7;
+                stroke: #000000c7;
+            }
+    
+            & svg {
+                width: 18px;
+                height: 18px;
+                margin: 0 31px 0 15px;
+            }
+        }
+    }
+}
+
+
+.dropdown {
+    &-menu {
+        padding: 0;    
+        height: 500px;
+        overflow-x: auto;
+        overflow-y: auto;
+    
+        &::-webkit-scrollbar { 
+            width: 9px;
+        }
+    
+        &::-webkit-scrollbar-track-piece { 
+            background: #E7E7E7;
+        }
+    
+        &::-webkit-scrollbar-thumb { 
+            background-color: #1157A7;
+            height: 100px;
+        }
+    }
+    
+    &-toggle {
+        color: rgba(0, 0, 0, 0.836) !important;
+        transition: all 0.5s ease;
+    }
+}
+
+.nav {
+    margin-right: auto;
+
+    @media all and (max-width: 992px) {
+        margin-right: 0;
+    }
+}
+
+.navbar {
+    &-collapse {
+        align-items: normal;
+        
+        @media all and (max-width: 992px) {
+            display: flex;
+            flex-direction: column-reverse;
+            text-align: center;
+        }
+    }
+    
+    &-light &-toggler {
+        outline: none;
+    }
+}
+
+
+
