@@ -1,9 +1,9 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import './authorization.scss';
 import { submitForm } from './submitForm';
 import { LoginSchema } from './LoginSchema';
+import './authorization.scss';
 
 
 export const Authorization = () => {
@@ -12,7 +12,7 @@ export const Authorization = () => {
             <div className='form'>
                 <h1 className='form__title text-center mb-3'>Trains Aggregator</h1>
                 <Formik
-                    initialValues={{ login: "", password: "" }}
+                    initialValues={{ username: "", password: "" }}
                     validationSchema={LoginSchema}
                     onSubmit={(values) => submitForm(values)} 
                 >
@@ -20,22 +20,22 @@ export const Authorization = () => {
                     <Form>
                         <div className='form-group'>
                             <label 
-                                htmlFor='login' 
-                                className={`form__label mb-2  ${touched.login && errors.login ? "form__error" : ""}`}
+                                htmlFor='username' 
+                                className={`form__label mb-2  ${touched.username && errors.username ? "form__error" : ""}`}
                             >
                                 Логин
                             </label>
                             <Field
-                                name='login'
+                                name='username'
                                 type='text'
-                                className= {`form__control ${touched.login && errors.login ? "form__invalid" : ""}`}
+                                className= {`form__control ${touched.username && errors.username ? "form__invalid" : ""}`}
                                 autoFocus={true}
                                 autoComplete="true"
-                                value={values.login}
+                                value={values.username}
                             />
                             <ErrorMessage
                                 component="span"
-                                name='login'
+                                name='username'
                                 className="form__error absolute"
                             />
                         </div>
