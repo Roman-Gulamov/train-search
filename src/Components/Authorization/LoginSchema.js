@@ -1,13 +1,13 @@
 import * as Yup from "yup";
 
 export const LoginSchema = Yup.object().shape({
-    login: Yup.string()
-        .matches(/^[\w.@+-]+$/, "Не используйте кириллицу")
-        .max(150, "Слишком длинный логин")
+    username: Yup.string()
+        .matches(/test_super/, "Неверный логин")
+        .max(10, "Слишком длинный логин")
         .required("Пожалуйста, введите логин"),
     password: Yup.string()
-        .matches(/^(?=.*[A-Z])(?=.*\d).{8,}$/, "Пароль должен содержать символы в верхнем регистре и цифры")
         .min(8, "В пароле должно быть не менее 8 симоволов")
+        .matches(/Nf<U4f<rDbtDxAPn/, "Неправильный пароль")
+        .max(16, "Слишком длинный пароль")
         .required("Пожалуйста, введите пароль")
-        .max(150, "Слишком длинный пароль")
 });
