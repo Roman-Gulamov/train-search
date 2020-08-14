@@ -7,6 +7,9 @@ import './authorization.scss';
 
 
 export const Authorization = () => {
+    console.log("Login: test_super");
+    console.log("Password: Nf<U4f<rDbtDxAPn");
+    
     return (
         <div className="authorization">
             <div className='form'>
