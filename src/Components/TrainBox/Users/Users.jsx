@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import Axios from "axios";
 import { Form, Accordion, Navbar, Nav, NavDropdown } from 'react-bootstrap';
@@ -24,7 +25,7 @@ export const Users = () => {
         .then((response) => {
             setParseFile(response.data);
         })
-    });
+    },[]);
 
     const checkOnline = (vip, online) => {
         if (vip) {
