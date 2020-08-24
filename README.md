@@ -1,5 +1,3 @@
-## Инструкция для старта проекта:
-
 1. `git clone https://github.com/Roman-Gulamov/Train-search`
                    
 2. `yarn install`
