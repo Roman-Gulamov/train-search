@@ -1,3 +1,5 @@
+![TrainSearch](https://res.cloudinary.com/romangulamov/image/upload/v1620859658/Screenshots/TrainsAggregator_jrfi41.png)
+
 # Instructions for starting a project:
 
 ``` bash
